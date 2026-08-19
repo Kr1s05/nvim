@@ -1,3 +1,4 @@
 ;; extends
 (field) @entry.outer
-(field) @entry.inner
+(field
+  value: (_) @entry.inner)

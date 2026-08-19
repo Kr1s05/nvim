@@ -1,0 +1,33 @@
+Functions
+  af  function/method definition
+  if  function/method body
+
+Parameters
+  ap  parameter
+  ip  parameter contents
+
+Calls
+  aa  call
+  ia  call arguments
+
+Returns
+  ar  return statement
+  ir  return argument
+
+Control flow
+  ac  conditional
+  al  loop
+
+Assignments
+  a=  entire declaration/assignment
+  i=  right-hand side
+
+Entries
+  ae  object/JSON/type entry
+  ie  entry value/type
+
+Classes / types
+  at  type definition
+  it  type definition body
+  at  class
+  it  class body

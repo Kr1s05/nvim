@@ -19,3 +19,11 @@ vim.keymap.set("n", "<S-CR>", function()
 	local line = vim.fn.line(".")
 	vim.api.nvim_buf_set_lines(0, line - 1, line - 1, false, { "" })
 end, { desc = "Insert newline above (stay on current line)" })
+-- Split window vertically
+vim.keymap.set("n", "<leader>-w-s", "<cmd>vsplit<cr>", {
+	desc = "Vertical split",
+})
+-- Next window
+vim.keymap.set("n", "<leader>w", "<C-w>w", {
+	desc = "Next window",
+})

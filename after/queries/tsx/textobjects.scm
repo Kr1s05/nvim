@@ -1,6 +1,6 @@
+;; inherits: typescript,jsx
 ;; extends
-(pair) @entry.outer
-(pair) @entry.inner
 
-(shorthand_property_identifier) @entry.outer
-(shorthand_property_identifier) @entry.inner
+;; TSX already inherits the TypeScript + JSX textobjects.
+;;
+;; Keep this file only if you want to add TSX-specific textobjects later.

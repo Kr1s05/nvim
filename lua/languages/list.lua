@@ -17,7 +17,7 @@ return {
 		parser = { "javascript", "typescript", "tsx" },
 		filetypes = { "javascript", "typescript", "typescriptreact", "javascriptreact" },
 		lsp = { "biome" },
-		formatter = { "biome" },
+		formatter = { "biome-check" },
 		linter = { "biome" },
 	},
 	html = {
@@ -31,7 +31,7 @@ return {
 		parser = { "css" },
 		filetypes = { "css" },
 		lsp = { "cssls", "tailwindcss", "biome" },
-		formatter = { "biome" },
+		formatter = { "biome-check" },
 		linter = { "biome" },
 	},
 	go = {
@@ -87,7 +87,7 @@ return {
 		parser = { "json" },
 		filetypes = { "json", "jsonc" },
 		lsp = { "biome" },
-		formatter = { "biome" },
+		formatter = { "biome-check" },
 		linter = { "biome" },
 	},
 	bash = {
