@@ -90,9 +90,12 @@ return {
 			map_move("[io", ts_move.goto_previous_start, { "@conditional.inner", "@loop.inner" })
 
 			-- entry
-			map_select("e", "@entry.inner")
-			map_move("]e", ts_move.goto_next_start, "@entry.inner")
-			map_move("[e", ts_move.goto_previous_start, "@entry.inner")
+			map_select("ae", "@entry.outer")
+			map_select("ie", "@entry.inner")
+			map_move("]ae", ts_move.goto_next_start, "@entry.outer")
+			map_move("]ie", ts_move.goto_next_start, "@entry.inner")
+			map_move("[ae", ts_move.goto_previous_start, "@entry.outer")
+			map_move("[ie", ts_move.goto_previous_start, "@entry.inner")
 
 			-- assignment
 			map_select("=", "@assignment.outer")

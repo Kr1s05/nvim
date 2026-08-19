@@ -16,9 +16,9 @@ return {
 	javascript = {
 		parser = { "javascript", "typescript", "tsx" },
 		filetypes = { "javascript", "typescript", "typescriptreact", "javascriptreact" },
-		lsp = { "ts_ls" },
-		formatter = { "prettierd" },
-		linter = { "eslint_d" },
+		lsp = { "biome" },
+		formatter = { "biome" },
+		linter = { "biome" },
 	},
 	html = {
 		parser = { "html" },
@@ -30,9 +30,9 @@ return {
 	css = {
 		parser = { "css" },
 		filetypes = { "css" },
-		lsp = { "cssls", "tailwindcss" },
-		formatter = { "prettierd" },
-		linter = {},
+		lsp = { "cssls", "tailwindcss", "biome" },
+		formatter = { "biome" },
+		linter = { "biome" },
 	},
 	go = {
 		parser = { "go" },
@@ -86,9 +86,9 @@ return {
 	json = {
 		parser = { "json" },
 		filetypes = { "json", "jsonc" },
-		lsp = { "jsonls" },
-		formatter = { "prettierd" },
-		linter = {},
+		lsp = { "biome" },
+		formatter = { "biome" },
+		linter = { "biome" },
 	},
 	bash = {
 		parser = { "bash" },
