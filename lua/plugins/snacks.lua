@@ -8,6 +8,13 @@ return {
 			enabled = true,
 		},
 		picker = {
+			hidden = true, -- Set to true to display hidden files (e.g., .git)
+			ignored = true, -- Set to true to display files ignored by .gitignore
+			icons = {
+				files = {
+					enabled = true, -- Ensures file type icons are active
+				},
+			},
 			sources = {
 				explorer = {
 					auto_close = true,
@@ -22,17 +29,17 @@ return {
 						picker:action("confirm")
 					end
 				end,
+				delete_and_reopen = function()
+					picker.action("explorer_del")
+					Snacks.explorer()
+				end,
 			},
 
 			win = {
-				input = {
-					keys = {
-						["<CR>"] = { "confirm_pick", mode = { "i", "n" } },
-					},
-				},
 				list = {
 					keys = {
 						["<CR>"] = "confirm_pick",
+						["d"] = "delete_and_reopen",
 					},
 				},
 			},

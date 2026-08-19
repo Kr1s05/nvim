@@ -1,4 +1,11 @@
 return {
+	regex = {
+		parser = { "regex" },
+		filetypes = {}, -- intentionally empty — see below
+		lsp = {},
+		formatter = {},
+		linter = {},
+	},
 	lua = {
 		parser = { "lua" },
 		filetypes = { "lua" },
